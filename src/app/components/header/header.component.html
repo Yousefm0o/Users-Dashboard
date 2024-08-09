@@ -1,0 +1,16 @@
+<mat-toolbar *ngIf="showHeader" class="toolbar">
+    <div class="select">
+      <span>Sorted by:</span>
+      <select id="select" class="form-select" aria-label="Default select example" (change)="onSortChange($event)">
+        <option value="id" [selected]="sortCriteria === 'id'">ID</option>
+        <option value="name" [selected]="sortCriteria === 'name'">Name</option>
+      </select>
+    </div>
+
+    <div class="search">
+      <span>Search by ID:</span>
+      <input class="form-control me-2" type="search"
+      placeholder="Search..." aria-label="Search"
+      (input)="onSearch($event)">
+    </div>
+</mat-toolbar>

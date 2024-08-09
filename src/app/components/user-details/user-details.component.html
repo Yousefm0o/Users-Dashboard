@@ -1,0 +1,15 @@
+<div class="container">
+  <button type="button" class="btn" (click)="goBack()">
+    <i class="fa-solid fa-turn-up turn"></i>
+    Back
+  </button>
+
+  <div class="card" *ngIf="user">
+      <img [src]="user.avatar" alt="{{user.first_name}}">
+      <div class="info">
+        <p><span>User ID : </span>{{user.id}}</p>
+        <p><span>Name : </span>{{user.first_name}} {{user.last_name}}</p>
+        <p><span>E-mail : </span>{{user.email}}</p>
+      </div>
+  </div>
+</div>

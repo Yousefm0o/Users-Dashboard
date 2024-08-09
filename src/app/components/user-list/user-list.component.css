@@ -1,0 +1,75 @@
+.container {
+  padding: 0px 25px 30px;
+}
+
+h3 {
+  font-weight: bold;
+  margin: 10px 10px;
+}
+
+.user-card {
+  display: flex;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.user-card:hover {
+  background-color: #eee;
+}
+
+.user-card:not(:last-of-type) {
+  border-bottom: 1px solid #aaa;
+}
+
+.user-card .id {
+  height: 30px;
+  width: 30px;
+  font-weight: 600;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  background-color: #001531;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.user-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-card p {
+  margin: 0px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.user-card .name {
+  padding: 0px 25px;
+  width: 200px
+}
+
+.user-card .bar {
+  width: 2px;
+  height: 35px;
+  background-color: #001531;
+}
+
+.user-card .email {
+  padding-left: 40px;
+}
+
+.paginator {
+  border-top: 3px solid #001531;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}

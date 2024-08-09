@@ -1,0 +1,14 @@
+<div class="container">
+  <h3>Users</h3>
+  <div class="user-card" *ngFor="let user of filteredUsers" (click)="viewUser(user.id)">
+    <span class="id">{{ user.id }}</span>
+    <img [src]="user.avatar" alt="{{user.first_name}}">
+    <p>
+      <span class="name">{{user.first_name}} {{user.last_name}}</span>
+      <span class="bar"></span>
+      <span class="email">{{ user.email }}</span>
+    </p>
+  </div>
+  <mat-paginator class="paginator" [length]="singlePageUsers" [pageSize]="6" (page)="onPageChange($event)">
+  </mat-paginator>
+</div>

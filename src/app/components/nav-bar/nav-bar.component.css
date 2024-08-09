@@ -1,0 +1,61 @@
+.container {
+  background-color: #001531;
+  color: #fff;
+  height: 80px;
+  min-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.wrapper h1 {
+  font-weight: bold;
+  margin: 0px;
+  height: 100%;
+  align-content: center;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrapper .links {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  list-style: none;
+  height: 100%;
+}
+
+
+.wrapper .morebtn {
+  height: 100%;
+  align-content: center;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrapper .links li {
+  height: 100%;
+  align-content: center;
+  cursor: pointer;
+  padding: 0px 25px;
+  transition: .3s;
+}
+
+.wrapper .links li:hover {
+  background-color: #001c40;
+}
+
+.wrapper .links li i {
+  margin-right: 7px;
+}
+
+
