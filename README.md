@@ -28,6 +28,3 @@ Demonstrate Angular (7+) skills by creating an interactive user dashboard using 
 ## Enhancements
 - Loading bar for smoother data retrieval.
 - Custom directives, RxJS observables, and animations for improved UX.
-
-## Documentation
-- Key functionalities and complex methods documented.
